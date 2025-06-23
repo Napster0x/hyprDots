@@ -1,9 +1,11 @@
 #!/bin/bash
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 #--Array of themes--#
 
 declare -A themeMap
-for theme in ./themes/*; do
+for theme in $SCRIPT_DIR/themes/*; do
   themeName=$(basename "$theme")
   themeMap["$themeName"]="$theme"
 done
@@ -16,7 +18,7 @@ selectedThemePath="${themeMap[$selectedTheme]}"
 
 #--Setdown previous theme--#
 
-previousThemePath="./themes/adventureTime"
+previousThemePath="./themes/paintingTheme"
 
 $previousThemePath/setdown.sh
 
