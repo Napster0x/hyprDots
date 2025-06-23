@@ -1,0 +1,77 @@
+/* Import pywal colors */
+
+/* Setting to change height without min. */
+
+* {	
+	font-size: 2px;
+	min-height: 0;
+}
+
+
+/* General Bar */
+
+/* Colores
+	6 borde sin uso
+	12 p10k
+	0 interior terminal
+ 0,5,8
+ */
+
+#waybar {
+	background: transparent; 
+	/*	linear-gradient(to right,
+		#ccffff 0%,
+		#66ccff 0.2%,
+		@color0 3%,
+		@color0 97%,
+		#009933 99.8%,
+		#33cc33 100%
+	);*/
+	/* border-bottom: 5px solid @color6;*/ 
+}
+
+/* Workspaces */
+
+#workspaces {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+
+#workspaces button {
+  padding: 0 10px;
+  margin: 0 15px;
+  min-width: 40px;
+  border-radius: 40px; /* Hace que el botón sea circular */
+  background-color: transparent;
+  border: none;
+
+
+}
+
+
+#workspaces button.empty {
+  	background-image: url("graphicsResources/burbuja.png");
+  	background-size: 40px;
+  	background-repeat: no-repeat;
+  	background-position: center;
+	margin-top: 0px;
+}
+
+#workspaces button:not(.active):not(.empty) {
+	background-image: url("graphicsResources/non-non.png");
+	background-size: 43px;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 0px;
+}
+
+
+#workspaces button.active {
+	background-image: url("graphicsResources/Active.png");
+	background-size: 42px;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 0px;
+}

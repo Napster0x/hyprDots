@@ -1,0 +1,39 @@
+# Configuración de LSD
+
+# Mostrar en formato clásico similar a 'ls'
+classic: false
+
+# Bloques a mostrar y su orden en la vista detallada
+blocks:
+  - permission
+  - user
+  - group
+  - size
+  - date
+  - name
+
+# Configuración de colores
+color:
+  # Cuándo aplicar colores: 'never', 'auto', 'always'
+  when: always
+  # Tema de color: 'default' o 'custom' (requiere 'colors.yaml')
+  theme: default
+
+# Formato de fecha: 'date', 'locale', 'relative' o formato personalizado
+date: '+%d %b %Y %H:%M'
+
+# Configuración de iconos
+icons:
+  # Cuándo mostrar iconos: 'always', 'auto', 'never'
+  when: always
+  # Tema de iconos: 'fancy' o 'unicode'
+  theme: fancy
+  # Separador entre el icono y el nombre
+  separator: " "
+
+# Mostrar encabezados de columnas
+header: true
+
+# Mostrar el total del tamaño de los directorios
+total-size: true
+
